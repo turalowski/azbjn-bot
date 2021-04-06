@@ -1,5 +1,5 @@
 const general_channels = ['söhbət', 'şəkillər', 'link', 'memes'];
-const image_channels = ['şəkillər'];
+const image_channels = ['şəkillər', 'testbot'];
 const conversation_channels = ['söhbət'];
 const url_channels = ['link'];
 
