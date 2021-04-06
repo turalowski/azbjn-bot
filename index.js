@@ -6,6 +6,11 @@ const bot = new Discord.Client();
 const TOKEN = process.env.TOKEN;
 bot.login(TOKEN);
 
+
+bot.on('guildMemberAdd', member => {
+  member.guild.channels.get('aramıza-qatılanlar').send("Welcome"); 
+});
+
 bot.on('ready', () => {
   console.info(`Logged in as ${bot.user.tag}!`);
 });
