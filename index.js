@@ -1,11 +1,15 @@
 require('dotenv').config();
 
-const validate = require('./utils/validations');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 const TOKEN = process.env.TOKEN;
 bot.login(TOKEN);
 
+const validate = require('./utils/validations');
+
+
+/* Add Istifadeciler Role to New Member */
+/* Add log to aramiza-qatilanlar */
 bot.on('guildMemberAdd', async member => {
   member
     .addRole(member.guild.roles.find(role => role.name === 'İstifadəçilər'))
@@ -16,6 +20,7 @@ bot.on('guildMemberAdd', async member => {
     });
 });
 
+/* Add log to aramizdan-ayrilanlar */
 bot.on('guildMemberRemove', async member => {
   member.guild.channels
     .find(channel => channel.name === 'aramızdan-ayrılanlar')
