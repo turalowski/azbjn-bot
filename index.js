@@ -8,6 +8,17 @@ bot.login(TOKEN);
 const validate = require('./utils/validations');
 
 
+bot.on('ready', () => {
+    bot.user.setStatus('available')
+    bot.user.setPresence({
+        game: {
+            name: 'with depression',
+            type: "STREAMING",
+            url: "https://www.twitch.tv/turalhj"
+        }
+    });
+});
+
 /* Add Istifadeciler Role to New Member */
 /* Add log to aramiza-qatilanlar */
 bot.on('guildMemberAdd', async member => {
