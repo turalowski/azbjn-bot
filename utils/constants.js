@@ -32,6 +32,7 @@ const image_available_channels = {
 const url_available_channels = {
   ...game_rooms,
   yeti_sohbet: '836745095557677077',
+  shekiller: '812458255330574368',
 };
 
 module.exports = {
