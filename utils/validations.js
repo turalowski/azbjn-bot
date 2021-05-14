@@ -29,6 +29,7 @@ const validate = content => {
     })
   ) {
     isValid = false;
+
   }
 
   // ONLY MESSAGE AVAILABLE
@@ -37,6 +38,7 @@ const validate = content => {
     isCorrectChannel(content, only_chat_channels)
   ) {
     isValid = false;
+
   }
 
   return {
