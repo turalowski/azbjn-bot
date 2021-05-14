@@ -23,16 +23,22 @@ const only_url_channels = {
 const chat_available_channels = {
   ...game_rooms,
   yeti_sohbet: '836745095557677077',
+  yayin_bildiris: '835168742677807184',
+  yayin_umumi: '825826298466926654',
 };
 const image_available_channels = {
   ...game_rooms,
   yeti_sohbet: '836745095557677077',
+  yayin_bildiris: '835168742677807184',
+  yayin_umumi: '825826298466926654',
 };
 
 const url_available_channels = {
   ...game_rooms,
   yeti_sohbet: '836745095557677077',
   shekiller: '812458255330574368',
+  yayin_bildiris: '835168742677807184',
+  yayin_umumi: '825826298466926654',
 };
 
 module.exports = {
