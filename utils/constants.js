@@ -16,10 +16,6 @@ const only_image_channels = {
   one_cixanlar: '842190788485316649',
 };
 
-const only_message_channels = {
-  sohbet: '828776610173026304',
-};
-
 const only_url_channels = {
   link: '828731927749591040',
 };
@@ -39,7 +35,6 @@ const url_available_channels = {
 };
 
 module.exports = {
-  only_message_channels,
   only_chat_channels,
   only_image_channels,
   only_url_channels,

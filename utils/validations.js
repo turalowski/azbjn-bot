@@ -4,6 +4,7 @@ const {
   only_url_channels,
   image_available_channels,
   url_available_channels,
+  chat_available_channels,
 } = require('./constants');
 const { isMedia, isCorrectChannel, isUrl } = require('./checks');
 
@@ -29,16 +30,17 @@ const validate = content => {
     })
   ) {
     isValid = false;
-
   }
 
-  // ONLY MESSAGE AVAILABLE
   if (
-    (isUrl(content) || isMedia(content)) &&
-    isCorrectChannel(content, only_chat_channels)
+    !isUrl(content) &&
+    !isMedia(content) &&
+    !isCorrectChannel(content, {
+      ...only_chat_channels,
+      ...chat_available_channels,
+    })
   ) {
     isValid = false;
-
   }
 
   return {
