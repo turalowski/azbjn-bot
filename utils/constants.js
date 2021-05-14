@@ -32,13 +32,15 @@ const chat_available_channels = {
   yayin_bildiris: '835168742677807184',
   yayin_umumi: '825826298466926654',
   musiqi_bot1: '828739973015928842',
-  musiqi_bot2: '828740004766679090'
+  musiqi_bot2: '828740004766679090',
+  core: '812462165470085151',
 };
 const image_available_channels = {
   ...game_rooms,
   yeti_sohbet: '836745095557677077',
   yayin_bildiris: '835168742677807184',
   yayin_umumi: '825826298466926654',
+  core: '812462165470085151',
 };
 
 const url_available_channels = {
@@ -47,6 +49,7 @@ const url_available_channels = {
   shekiller: '812458255330574368',
   yayin_bildiris: '835168742677807184',
   yayin_umumi: '825826298466926654',
+  core: '812462165470085151',
 };
 
 module.exports = {
