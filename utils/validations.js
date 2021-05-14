@@ -1,29 +1,44 @@
 const {
-  image_channels,
-  url_channels,
-  conversation_channels,
+  only_chat_channels,
+  only_image_channels,
+  only_url_channels,
+  image_available_channels,
+  url_available_channels,
 } = require('./constants');
 const { isMedia, isCorrectChannel, isUrl } = require('./checks');
 
 const validate = content => {
   let isValid = true;
   /* ONLY SEND MEDIA IN MEDYA CHANNEL */
-  if (!isMedia(content) && isCorrectChannel(content, image_channels)) {
-    isValid = false;
-  }
-
-  /* ONLY SEND URL IN LINK CHANNEL */
-  if (!isCorrectChannel(content, url_channels) && isUrl(content)) {
-    isValid = false;
-  }
-
-  /* UNABLE TO SEND MEDIA AND URL IN CONVERSATION CHANNELS */
   if (
-    isCorrectChannel(content, conversation_channels) &&
-    (isMedia(content) || isUrl(content))
+    isMedia(content) &&
+    !isCorrectChannel(content, {
+      ...only_image_channels,
+      ...image_available_channels,
+    })
   ) {
     isValid = false;
   }
+
+  /* SEND URL IN URL AVAILABLE CHANNELS */
+  if (
+    isUrl(content) &&
+    !isCorrectChannel(content, {
+      ...only_url_channels,
+      ...url_available_channels,
+    })
+  ) {
+    isValid = false;
+  }
+
+  // ONLY MESSAGE AVAILABLE
+  if (
+    (isUrl(content) || isMedia(content)) &&
+    isCorrectChannel(content, only_chat_channels)
+  ) {
+    isValid = false;
+  }
+
   return {
     isValid,
   };
