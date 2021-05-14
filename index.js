@@ -33,7 +33,7 @@ bot.on('guildMemberAdd', async member => {
 /* Add log to aramizdan-ayrilanlar */
 bot.on('guildMemberRemove', async member => {
   member.guild.channels
-    .find(channel => channel.name === '828808479534743582')
+    .find(channel => channel.id === '828808479534743582')
     .send(`${member.displayName} aramızdan ayrıldı.`);
 });
 
