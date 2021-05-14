@@ -5,6 +5,7 @@ const game_rooms = {
   rocket_league_sohbet: '842736173381320705',
   diger_oyunlar1: '842738303082299422',
   diger_oyunlar2: '842738487303471106',
+  rp_yazili: '835584568509464626',
 };
 
 const only_chat_channels = {
