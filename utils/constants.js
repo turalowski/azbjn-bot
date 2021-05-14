@@ -15,6 +15,7 @@ const only_chat_channels = {
 const only_image_channels = {
   shekiller: '812458255330574368',
   one_cixanlar: '842190788485316649',
+  rp_geyim: '837367841040236585',
 };
 
 const only_url_channels = {
