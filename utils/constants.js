@@ -10,6 +10,10 @@ const game_rooms = {
 
 const only_chat_channels = {
   sohbet_main: '828776610173026304',
+  aramiza_qatilanlar: '828807813526454284',
+  aramizdan_ayrilanlar: '828808479534743582',
+  yeni_deyisiklikler: '813313643361075251',
+  teklifler: '828725847186997298',
 };
 
 const only_image_channels = {
