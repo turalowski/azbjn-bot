@@ -7,16 +7,15 @@ bot.login(TOKEN);
 
 const validate = require('./utils/validations');
 
-
 bot.on('ready', () => {
-    bot.user.setStatus('available')
-    bot.user.setPresence({
-        game: {
-            name: 'with depression',
-            type: "STREAMING",
-            url: "https://www.twitch.tv/turalhj"
-        }
-    });
+  bot.user.setStatus('available');
+  bot.user.setPresence({
+    game: {
+      name: 'with depression',
+      type: 'STREAMING',
+      url: 'https://www.twitch.tv/turalhj',
+    },
+  });
 });
 
 /* Add Istifadeciler Role to New Member */
@@ -26,7 +25,7 @@ bot.on('guildMemberAdd', async member => {
     .addRole(member.guild.roles.find(role => role.name === 'İstifadəçilər'))
     .then(() => {
       member.guild.channels
-        .find(channel => channel.name === 'aramıza-qatılanlar')
+        .find(channel => channel.id === '828807813526454284')
         .send(`${member.displayName} aramıza qatıldı.`);
     });
 });
@@ -34,7 +33,7 @@ bot.on('guildMemberAdd', async member => {
 /* Add log to aramizdan-ayrilanlar */
 bot.on('guildMemberRemove', async member => {
   member.guild.channels
-    .find(channel => channel.name === 'aramızdan-ayrılanlar')
+    .find(channel => channel.name === '828808479534743582')
     .send(`${member.displayName} aramızdan ayrıldı.`);
 });
 
