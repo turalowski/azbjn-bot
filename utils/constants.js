@@ -1,5 +1,5 @@
-const general_channels = ['söhbət', 'şəkillər', 'link', 'memes'];
-const image_channels = ['şəkillər', 'önə-çıxanlar'];
+const general_channels = ['🗨・söhbət', '💥・şəkillər', '🖼・link', 'memes'];
+const image_channels = ['💥・şəkillər', '💥・önə-çıxanlar'];
 const conversation_channels = ['söhbət'];
 const url_channels = ['link', 'oyun', 'yeti-yazılı'];
 
