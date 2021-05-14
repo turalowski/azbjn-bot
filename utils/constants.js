@@ -25,6 +25,8 @@ const chat_available_channels = {
   yeti_sohbet: '836745095557677077',
   yayin_bildiris: '835168742677807184',
   yayin_umumi: '825826298466926654',
+  musiqi_bot1: '828739973015928842',
+  musiqi_bot2: '828740004766679090'
 };
 const image_available_channels = {
   ...game_rooms,
