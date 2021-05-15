@@ -32,8 +32,9 @@ const chat_available_channels = {
   yayin_bildiris: '835168742677807184',
   yayin_umumi: '825826298466926654',
   musiqi_bot1: '828739973015928842',
-  musiqi_bot2: '828740004766679090',
+  umumi_bot: '828740004766679090',
   core: '812462165470085151',
+
 };
 const image_available_channels = {
   ...game_rooms,
@@ -41,6 +42,7 @@ const image_available_channels = {
   yayin_bildiris: '835168742677807184',
   yayin_umumi: '825826298466926654',
   core: '812462165470085151',
+  umumi_bot: '828740004766679090',
 };
 
 const url_available_channels = {
@@ -50,6 +52,7 @@ const url_available_channels = {
   yayin_bildiris: '835168742677807184',
   yayin_umumi: '825826298466926654',
   core: '812462165470085151',
+  musiqi_bot1: '828739973015928842',
 };
 
 module.exports = {
