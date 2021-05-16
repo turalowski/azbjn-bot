@@ -18,6 +18,11 @@ bot.on('ready', () => {
   });
 });
 
+
+// bot.on('messageReactionAdd', async (reaction, user) => {
+//   if(reaction.message.id === )
+//  });
+
 /* Add Istifadeciler Role to New Member */
 /* Add log to aramiza-qatilanlar */
 bot.on('guildMemberAdd', async member => {

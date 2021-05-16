@@ -35,6 +35,7 @@ const chat_available_channels = {
   umumi_bot: '828740004766679090',
   core: '812462165470085151',
   oyun: '842923954032607244',
+  rollar: '843442306693595178',
 };
 const image_available_channels = {
   ...game_rooms,
