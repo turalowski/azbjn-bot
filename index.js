@@ -72,16 +72,25 @@ bot.on('messageReactionRemove', async (reaction, user) => {
   }
 });
 
+/*
+
+`
+    ${member.displayName} Gaming Azerbaijan Discord Serverimizə Xoş Gəlmisiniz.\nRollar kanalından oynadığınız oyuna uyğun rolları seçə bilərsiniz və bunun vasitəsi ilə öz oyun yoldaşlarınızı tapa bilərsiniz. \nServerimizdə görmək istədiyiniz dəyişiklikləri :bulb:təkliflər kanalı vasitəsi ilə bizə bildirə bilərsiniz.\nYeni-dəyişikliklər kanalında isə serverdəki yenilikləri görə bilərsiniz.\nÖz dostlarınızı bizim serverə bu link vasitəsilə dəvət edə bilərsiniz. https://discord.gg/gJEQDTyWZ7\nXoş Əyləncələr!
+`
+
+*/
+
 /* Add Istifadeciler Role to New Member */
 /* Add log to aramiza-qatilanlar */
 bot.on('guildMemberAdd', async member => {
-  member.roles
+  await member.roles
     .add(member.guild.roles.cache.find(({ id }) => id === '812460693671772168'))
     .then(() => {
       member.guild.channels.cache
         .find(channel => channel.id === '828807813526454284')
         .send(`${member.displayName} aramıza qatıldı.`);
     });
+  await member.send('Xosh geldin')
 });
 
 /* Add log to aramizdan-ayrilanlar */

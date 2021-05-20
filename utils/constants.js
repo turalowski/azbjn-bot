@@ -36,6 +36,7 @@ const chat_available_channels = {
   core: '812462165470085151',
   oyun: '842923954032607244',
   rollar: '843442306693595178',
+  qaydalar: '844891301127782420',
 };
 const image_available_channels = {
   ...game_rooms,
@@ -45,6 +46,7 @@ const image_available_channels = {
   core: '812462165470085151',
   umumi_bot: '828740004766679090',
   oyun: '842923954032607244',
+  qaydalar: '844891301127782420',
 };
 
 const url_available_channels = {
@@ -56,6 +58,7 @@ const url_available_channels = {
   core: '812462165470085151',
   musiqi_bot1: '828739973015928842',
   oyun: '842923954032607244',
+  qaydalar: '844891301127782420',
 };
 
 module.exports = {
