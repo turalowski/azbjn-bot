@@ -93,7 +93,7 @@ bot.on('guildMemberAdd', async member => {
             member.id
           }> aramıza xoş gəlmisən. ${member.guild.channels.cache
             .get('843442306693595178')
-            .toString()} otağından oynadığın və sevdiyin oyunlara uyğun rolları götürə bilərsən.`
+            .toString()} otağından oynadığın və sevdiyin oyunlara uyğun rolları götürə bilərsən. <:qelbimdesen:848371703596056628>`
         );
     });
 });
