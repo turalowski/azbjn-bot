@@ -88,16 +88,21 @@ bot.on('guildMemberAdd', async member => {
     .then(() => {
       member.guild.channels.cache
         .find(channel => channel.id === '828807813526454284')
-        .send(`${member.displayName} aramıza qatıldı.`);
+        .send(
+          `Salam, <@${
+            member.id
+          }> aramıza xoş gəlmisən. ${member.guild.channels.cache
+            .get('843442306693595178')
+            .toString()} otağından oynadığın və sevdiyin oyunlara uyğun rolları götürə bilərsən.`
+        );
     });
-  await member.send('Xosh geldin')
 });
 
 /* Add log to aramizdan-ayrilanlar */
 bot.on('guildMemberRemove', async member => {
   member.guild.channels.cache
     .find(channel => channel.id === '828808479534743582')
-    .send(`${member.displayName} aramızdan ayrıldı.`);
+    .send(`<@${member.id}> aramızdan ayrıldı.`);
 });
 
 bot.on('message', async msg => {
