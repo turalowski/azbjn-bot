@@ -91,7 +91,7 @@ bot.on('guildMemberAdd', async member => {
         .send(
           `Salam, <@${
             member.id
-          }> ${member.displayName} aramıza xoş gəlmisən. ${member.guild.channels.cache
+          }> aramıza xoş gəlmisən. ${member.guild.channels.cache
             .get('843442306693595178')
             .toString()} otağından oynadığın və sevdiyin oyunlara uyğun rolları götürə bilərsən. <:qelbimdesen:848371703596056628>`
         );
@@ -102,7 +102,7 @@ bot.on('guildMemberAdd', async member => {
 bot.on('guildMemberRemove', async member => {
   member.guild.channels.cache
     .find(channel => channel.id === '828808479534743582')
-    .send(`<@${member.id}> aramızdan ayrıldı.`);
+    .send(`<@${member.id}> ${member.displayName} aramızdan ayrıldı.`);
 });
 
 bot.on('message', async msg => {
