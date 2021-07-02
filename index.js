@@ -12,6 +12,7 @@ const reaction_messages = {
   rocket_league: '843471554889515028',
   rainbow_six_siege: '843471648443072572',
   diger_oyunlar: '843471818094411776',
+  lol: '860591512307499018',
 };
 
 const roles = {
@@ -21,6 +22,7 @@ const roles = {
   rocket_league: '832737638468681779',
   rainbow_six_siege: '843470778724253705',
   diger_oyunlar: '843470734125826048',
+  lol: '860591105812594688',
 };
 const validate = require('./utils/validations');
 

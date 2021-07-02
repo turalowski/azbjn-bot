@@ -6,6 +6,7 @@ const game_rooms = {
   diger_oyunlar1: '842738303082299422',
   diger_oyunlar2: '842738487303471106',
   rp_yazili: '835584568509464626',
+  lol: '860590264363384843',
 };
 
 const only_chat_channels = {
