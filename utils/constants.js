@@ -30,6 +30,7 @@ const only_url_channels = {
 const chat_available_channels = {
   ...game_rooms,
   yeti_sohbet: '836745095557677077',
+  qaqams_sohbet: '876566214191743048',
   yayin_bildiris: '835168742677807184',
   yayin_umumi: '825826298466926654',
   musiqi_bot1: '828739973015928842',
@@ -42,6 +43,7 @@ const chat_available_channels = {
 const image_available_channels = {
   ...game_rooms,
   yeti_sohbet: '836745095557677077',
+  qaqams_sohbet: '876566214191743048',
   yayin_bildiris: '835168742677807184',
   yayin_umumi: '825826298466926654',
   core: '812462165470085151',
@@ -53,6 +55,7 @@ const image_available_channels = {
 const url_available_channels = {
   ...game_rooms,
   yeti_sohbet: '836745095557677077',
+  qaqams_sohbet: '876566214191743048',
   shekiller: '812458255330574368',
   yayin_bildiris: '835168742677807184',
   yayin_umumi: '825826298466926654',
