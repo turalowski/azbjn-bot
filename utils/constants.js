@@ -9,28 +9,20 @@ const game_rooms = {
   lol: '860590264363384843',
 };
 
-const only_chat_channels = {
+
+
+
+const chat_available_channels = {
+  ...game_rooms,
   sohbet_main: '828776610173026304',
   qeydiyyat: '877342177922007071',
   aramiza_qatilanlar: '828807813526454284',
   aramizdan_ayrilanlar: '828808479534743582',
   yeni_deyisiklikler: '813313643361075251',
   teklifler: '828725847186997298',
-};
-
-const only_image_channels = {
-  shekiller: '812458255330574368',
-  one_cixanlar: '842190788485316649',
-};
-
-const only_url_channels = {
-  link: '828731927749591040',
-};
-
-const chat_available_channels = {
-  ...game_rooms,
   yeti_sohbet: '836745095557677077',
   qaqams_sohbet: '876566214191743048',
+  bildirisler: '877365465507307540',
   musiqi_bot1: '828739973015928842',
   core: '812462165470085151',
   oyun: '842923954032607244',
@@ -39,8 +31,11 @@ const chat_available_channels = {
 };
 const image_available_channels = {
   ...game_rooms,
+  shekiller: '812458255330574368',
+  one_cixanlar: '842190788485316649',
   yeti_sohbet: '836745095557677077',
   qaqams_sohbet: '876566214191743048',
+  bildirisler: '877365465507307540',
   core: '812462165470085151',
   oyun: '842923954032607244',
   qaydalar: '844891301127782420',
@@ -48,8 +43,10 @@ const image_available_channels = {
 
 const url_available_channels = {
   ...game_rooms,
+  link: '828731927749591040',
   yeti_sohbet: '836745095557677077',
   qaqams_sohbet: '876566214191743048',
+  bildirisler: '877365465507307540',
   shekiller: '812458255330574368',
   core: '812462165470085151',
   musiqi_bot1: '828739973015928842',
@@ -58,9 +55,6 @@ const url_available_channels = {
 };
 
 module.exports = {
-  only_chat_channels,
-  only_image_channels,
-  only_url_channels,
   chat_available_channels,
   image_available_channels,
   url_available_channels,

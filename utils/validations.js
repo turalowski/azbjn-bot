@@ -1,7 +1,4 @@
 const {
-  only_chat_channels,
-  only_image_channels,
-  only_url_channels,
   image_available_channels,
   url_available_channels,
   chat_available_channels,
@@ -14,30 +11,14 @@ const validate = content => {
   if (
     isMedia(content) &&
     !isCorrectChannel(content, {
-      ...only_image_channels,
       ...image_available_channels,
     })
   ) {
     isValid = false;
-  }
-
-  /* SEND URL IN URL AVAILABLE CHANNELS */
-  if (
+  } else if (
     isUrl(content) &&
     !isCorrectChannel(content, {
-      ...only_url_channels,
       ...url_available_channels,
-    })
-  ) {
-    isValid = false;
-  }
-
-  if (
-    !isUrl(content) &&
-    !isMedia(content) &&
-    !isCorrectChannel(content, {
-      ...only_chat_channels,
-      ...chat_available_channels,
     })
   ) {
     isValid = false;
