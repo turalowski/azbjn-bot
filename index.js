@@ -74,29 +74,13 @@ bot.on('messageReactionRemove', async (reaction, user) => {
   }
 });
 
-/*
-
-`
-    ${member.displayName} Gaming Azerbaijan Discord Serverimizə Xoş Gəlmisiniz.\nRollar kanalından oynadığınız oyuna uyğun rolları seçə bilərsiniz və bunun vasitəsi ilə öz oyun yoldaşlarınızı tapa bilərsiniz. \nServerimizdə görmək istədiyiniz dəyişiklikləri :bulb:təkliflər kanalı vasitəsi ilə bizə bildirə bilərsiniz.\nYeni-dəyişikliklər kanalında isə serverdəki yenilikləri görə bilərsiniz.\nÖz dostlarınızı bizim serverə bu link vasitəsilə dəvət edə bilərsiniz. https://discord.gg/gJEQDTyWZ7\nXoş Əyləncələr!
-`
-
-*/
-
-/* Add Istifadeciler Role to New Member */
-/* Add log to aramiza-qatilanlar */
 bot.on('guildMemberAdd', async member => {
   await member.roles
     .add(member.guild.roles.cache.find(({ id }) => id === '877341884320735342'))
     .then(() => {
       member.guild.channels.cache
         .find(channel => channel.id === '828807813526454284')
-        .send(
-          `Salam, <@${
-            member.id
-          }> aramıza xoş gəlmisən. ${member.guild.channels.cache
-            .get('843442306693595178')
-            .toString()} otağından oynadığın və sevdiyin oyunlara uyğun rolları götürə bilərsən. <:qelbimdesen:848371703596056628>`
-        );
+        .send(`<@${member.id}> aramıza qatıldı. `);
     });
 });
 
@@ -104,7 +88,7 @@ bot.on('guildMemberAdd', async member => {
 bot.on('guildMemberRemove', async member => {
   member.guild.channels.cache
     .find(channel => channel.id === '828808479534743582')
-    .send(`<@${member.id}> ${member.displayName} aramızdan ayrıldı.`);
+    .send(` ${member.displayName} aramızdan ayrıldı.`);
 });
 
 bot.on('message', async msg => {
