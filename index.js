@@ -27,8 +27,8 @@ const roles = {
 const validate = require('./utils/validations');
 
 bot.on('ready', async () => {
-  bot.user.setStatus('available');
   bot.user.setPresence({
+    status: "online",
     game: {
       name: 'with depression',
       type: 'STREAMING',
