@@ -86,7 +86,7 @@ bot.on('messageReactionRemove', async (reaction, user) => {
 /* Add log to aramiza-qatilanlar */
 bot.on('guildMemberAdd', async member => {
   await member.roles
-    .add(member.guild.roles.cache.find(({ id }) => id === '812460693671772168'))
+    .add(member.guild.roles.cache.find(({ id }) => id === '877341884320735342'))
     .then(() => {
       member.guild.channels.cache
         .find(channel => channel.id === '828807813526454284')

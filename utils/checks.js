@@ -1,6 +1,7 @@
 const url_validator = require('is-url');
 const regex = new RegExp(
-  '([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?(/.*)?'
+  '([a-zA-Zd]+://)?((w+:w+@)?([a-zA-Zd.-]+.[A-Za-z]{2,4})(:d+)?(/.*)?)',
+  'i'
 );
 const isMedia = content => content.attachments.size > 0;
 const includesText = content => content.content.length > 0;

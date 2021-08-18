@@ -20,7 +20,6 @@ const only_chat_channels = {
 const only_image_channels = {
   shekiller: '812458255330574368',
   one_cixanlar: '842190788485316649',
-  rp_geyim: '837367841040236585',
 };
 
 const only_url_channels = {
@@ -31,10 +30,7 @@ const chat_available_channels = {
   ...game_rooms,
   yeti_sohbet: '836745095557677077',
   qaqams_sohbet: '876566214191743048',
-  yayin_bildiris: '835168742677807184',
-  yayin_umumi: '825826298466926654',
   musiqi_bot1: '828739973015928842',
-  umumi_bot: '828740004766679090',
   core: '812462165470085151',
   oyun: '842923954032607244',
   rollar: '843442306693595178',
@@ -44,10 +40,7 @@ const image_available_channels = {
   ...game_rooms,
   yeti_sohbet: '836745095557677077',
   qaqams_sohbet: '876566214191743048',
-  yayin_bildiris: '835168742677807184',
-  yayin_umumi: '825826298466926654',
   core: '812462165470085151',
-  umumi_bot: '828740004766679090',
   oyun: '842923954032607244',
   qaydalar: '844891301127782420',
 };
@@ -57,8 +50,6 @@ const url_available_channels = {
   yeti_sohbet: '836745095557677077',
   qaqams_sohbet: '876566214191743048',
   shekiller: '812458255330574368',
-  yayin_bildiris: '835168742677807184',
-  yayin_umumi: '825826298466926654',
   core: '812462165470085151',
   musiqi_bot1: '828739973015928842',
   oyun: '842923954032607244',
